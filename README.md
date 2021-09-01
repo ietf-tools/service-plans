@@ -1,2 +1,3 @@
 # zulip-implementation
-Discussion of the IETF zulip service plan
+Repository for all public documents relating to the IETF implementation of Zulip.
+* [Service Plan](Service-Plan.md)
