@@ -57,6 +57,9 @@ Initially all Zulip content (messages and attachments) will be retained in Zulip
 ### 3.2 Direct messages
 Direct messages (described as 'private messages' in Zulip) will be allowed, which is a new development for an IETF operated service. The initial plan is that all messages, including direct ones, are covered by the NoteWell. All direct messages will be retained on the Zulip server in line with the general retention plan for this service. Direct messages should not be regarded as private because they will be accessed and shared where required by policy or law.
 
+### 3.3 Editing messages
+The Zulip service will be configured to only allow editing of messages for 10 minutes after creation.
+
 ## 4 Integrations
 
 ### 4.1 Meetecho integration
@@ -72,4 +75,4 @@ Zulip provides a URL for each stream. Initially these URLs will be used in the a
 Potential ways of integrating Zulip with the Datatracker to provide enhanced functionality between the two systems are being investigated.
 
 ### Other integrations
-Zulip supports integration with most APIs.  While there are no specific plans to use this, any requests will be investigated. Such requests should be submitted to the tools team.
+Zulip supports integration with most APIs.  While there are no specific plans to use this, any requests will be investigated.
