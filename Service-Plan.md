@@ -4,12 +4,12 @@
 The Zulip service will be a production service, available to all IETF community members.
 
 ### 1.2 Authentication
-Login to Zulip is via the Datatracker OIDC service only.
+Login to Zulip is via the Datatracker credentials only.
 
 ### 1.3 NoteWell
 The NoteWell will apply to all messages in the Zulip service.
 
-As Zulip does not support a welcome message, a stream will be created called #NOTEWELL with restricted posting rights and the NoteWell will be posted in there.
+As Zulip does not support a welcome message, a stream will be created called #NOTEWELL with restricted posting rights and the NoteWell will be posted in there. #NOTEWELL will be a default stream for all users.
 
 ## 2 Streams
 Zulip organises content into streams and then topics within those streams. Streams are analagous to an email list and topics to threads within those.
@@ -24,7 +24,7 @@ Each working group that chooses to utilise to Zulip will initially be configured
 
 The mailing list mirror has been split into a separate stream as having it mirror into the general chat stream would mean:
 
-* People who already subscribe to the mailing list would have to scroll through the same messages twice. In this configuration they can choose not to subscribe to the list mirror. 
+* People who already subscribe to the mailing list would have to scroll through the same messages twice. In this configuration they can choose not to subscribe to the list mirror in zulip or to mute the stream to view or search the mirrored messages without receiving notifications for them.
 * The archive of the chat would include the mailing list messages  which is confusing for searching/referencing.
 * The jabber channel would also get the mirrored mailing list messages, compounding the problem. 
 
@@ -52,10 +52,13 @@ A permanent, public, searchable and linkable archive will be achieved by the jab
 The Zulip service is different from the jabber service because all users have IETF accounts and all messages, including direct messages, pass through the IETF server. The policies around messages are likely to develop over time.
 
 ### 3.1 Message retention
-Initially Zulip messages will be retained in Zulip indefinitely.
+Initially all Zulip content (messages and attachments) will be retained in Zulip indefinitely.
 
 ### 3.2 Direct messages
 Direct messages (described as 'private messages' in Zulip) will be allowed, which is a new development for an IETF operated service. The initial plan is that all messages, including direct ones, are covered by the NoteWell. All direct messages will be retained on the Zulip server in line with the general retention plan for this service. Direct messages should not be regarded as private because they will be accessed and shared where required by policy or law.
+
+### 3.3 Editing messages
+The Zulip service will be configured to only allow editing of messages for 10 minutes after creation.
 
 ## 4 Integrations
 
@@ -72,4 +75,4 @@ Zulip provides a URL for each stream. Initially these URLs will be used in the a
 Potential ways of integrating Zulip with the Datatracker to provide enhanced functionality between the two systems are being investigated.
 
 ### Other integrations
-Zulip supports integration with most APIs.  While there are no specific plans to use this, any requests will be investigated. 
+Zulip supports integration with most APIs.  While there are no specific plans to use this, any requests will be investigated.
