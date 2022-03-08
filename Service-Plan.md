@@ -15,9 +15,9 @@ As Zulip does not support a welcome message, a stream will be created called #NO
 Zulip organises content into streams and then topics within those streams. Streams are analagous to an email list and topics to threads within those.
 
 ### 2.1 Working Group streams
-Any Working Group can elect to utilise Zulip.
+All Working Groups will have a Zulip stream configured for them, available to utilise as desired. 
 
-Each working group that chooses to utilise to Zulip will initially be configured with two streams:
+Each working group will initially be configured with two streams:
 
 1. General chat, two-way bridged with the jabber room.
 2. One-way mirror of the mailing list, read only.
