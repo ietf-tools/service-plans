@@ -19,7 +19,7 @@ All Working Groups will have a Zulip stream configured for them, available to ut
 
 Each working group will initially be configured with two streams:
 
-1. General chat, two-way bridged with the jabber room.
+1. General chat, two-way bridged with the jabber room.[^1]
 2. One-way mirror of the mailing list, read only.
 
 The mailing list mirror has been split into a separate stream as having it mirror into the general chat stream would mean:
@@ -46,10 +46,15 @@ The admins of any existing non-WG mailing list can elect to utilise Zulip, which
 Private streams will only be allowed under the same terms as private mailing lists (i.e. for the confidential communications of the different groups in IETF leadership).
 
 ### 2.4 Stream archiving
-A permanent, public, searchable and linkable archive will be achieved by the jabber bridging and the current archiving of jabber messages rather than directly from Zulip.  Later, it is likely that the built-in Zulip archiving tool will be used to directly archive public streams. 
+
+Zulip is, in itself, an archive. Previous content in any stream may be referenced through the UI.
+
+For MeetEcho meetings using Zulip as a chat back-end, the content of the chat for the duration of the meeting will be uploaded into the datatracker as a meeting artifact.
+
+We will investigate enabling Zulip's ability to provide [public views of streams](https://github.com/zulip/zulip/issues/13172).
 
 ## 3 Messages
-The Zulip service is different from the jabber service because all users have IETF accounts and all messages, including direct messages, pass through the IETF server. The policies around messages are likely to develop over time.
+The Zulip service is different from the previous jabber service because all users have IETF accounts and all messages, including direct messages, pass through the IETF server. The policies around messages are likely to develop over time.
 
 ### 3.1 Message retention
 Initially all Zulip content (messages and attachments) will be retained in Zulip indefinitely.
@@ -62,17 +67,19 @@ The Zulip service will be configured to only allow editing of messages for 10 mi
 
 ## 4 Integrations
 
-### 4.1 Meetecho integration
-Initally, integration with Meetecho will be achieved by the two-way jabber bridging.  Later, it is likely that Meetecho will be asked to add support for Zulip.
+### 4.1 MeetEcho integration
+MeetEcho uses Zulip as the back-end for chat during meeting sessions.
 
 ### 4.2 GitHub integration
 Any stream can be optionally configured to receive GitHub notifications.  WGs can decide if these should be received into an existing stream or a separate dedicated stream.
 
 ### 4.3 Agenda integration
-Zulip provides a URL for each stream. Initially these URLs will be used in the agenda in addition to the jabber rooms links.
+Zulip provides a URL for each stream. This URL is provided as the chat link for each session on a meeting agenda.
 
 ### 4.4 Datatracker integration
 Potential ways of integrating Zulip with the Datatracker to provide enhanced functionality between the two systems are being investigated.
 
 ### Other integrations
 Zulip supports integration with most APIs.  While there are no specific plans to use this, any requests will be investigated.
+
+[^1]: Only through IETF 115, at which point jabber bridging will be decomissioned.
